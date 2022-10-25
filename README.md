@@ -49,7 +49,7 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v Pr
 pyinstaller -F -w ProxyDisable.py
 ```
 
-​	最后，在运行中输入`shell:startup`，把生成的[ProxyDisable.exe](https://github.com/Sicheng-Wei/Clash_Proxy_AutoDisable/blob/main/Home_Edition/ProxyDisable.exe)放入文件夹即可。
+​	最后，在运行中输入`shell:startup`，把生成的[ProxyDisable.exe](https://github.com/Sicheng-Wei/Clash_Proxy_AutoDisable/blob/main/ProxyDisable.exe)放入文件夹即可。
 
 ​	效果：开机后0~10秒内自动将设置中的手动代理关闭。
 
@@ -57,7 +57,7 @@ pyinstaller -F -w ProxyDisable.py
 
 ### 	Win10/11 Professional Edition
 
-​	将以下命令写入[ProxyDisable.bat](https://github.com/Sicheng-Wei/Clash_Proxy_AutoDisable/blob/main/Prof_Edition/ProxyDisable.bat)脚本：
+​	将以下命令写入[ProxyDisable.bat](https://github.com/Sicheng-Wei/Clash_Proxy_AutoDisable/blob/main/ProxyDisable.bat)脚本：
 
 ```powershell
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /d 0 /t REG_DWORD /f 
